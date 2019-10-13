@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMI Calculator"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+
+        />
+
+    <EditText
+        android:layout_below="@+id/top"
+        android:id="@+id/prin"
+        android:hint="Principal"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/rate"
+        android:layout_below="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:hint="Rate"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/prin"
+
+        android:layout_marginTop="25dp"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/time"
+        android:layout_below="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="time"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/rate"
+
+        android:inputType="number"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:layout_below="@+id/prin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:textColor="#ffffff"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:layout_below="@+id/b1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/reset"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/warning"
+        android:layout_below="@+id/reset"
+        android:textColor="#F91818"
+
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="times new roman"
+
+
+
+
+        />
+
+
+</RelativeLayout>
