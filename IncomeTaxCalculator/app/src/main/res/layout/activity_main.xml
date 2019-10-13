@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income Tax Calculator"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:text="Fill Your Details"
+        android:textSize="20dp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/T1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_below="@+id/T1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Name"
+
+        android:id="@+id/E2"
+        android:textSize="30dp"
+        android:textColorHint="@color/colorPrimary"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/E2"
+        android:layout_marginTop="25dp"
+        android:id="@+id/E1"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:hint="Income"
+        android:textColorHint="@color/colorPrimary"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/E2"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/E1"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/age"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColorHint="@color/colorPrimary"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B1"
+        android:layout_below="@+id/age"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:textColor="#ffffff"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:layout_below="@+id/B1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+
+        />
+</RelativeLayout>
