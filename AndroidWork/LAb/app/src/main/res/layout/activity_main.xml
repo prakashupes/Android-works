@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:id="@+id/name_icon"
+        android:layout_marginTop="30dp"
+
+
+        />
+    <EditText
+        android:layout_toRightOf="@+id/name_icon"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolor"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_local_phone_black_24dp"
+        android:id="@+id/phone_icon"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/name_icon"
+
+
+
+        />
+    <EditText
+        android:layout_toRightOf="@+id/phone_icon"
+        android:id="@+id/phone"
+        android:hint="Phone"
+        android:layout_marginTop="30dp"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolor"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:layout_below="@+id/name"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_black_24dp"
+        android:id="@+id/address_icon"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/phone_icon"
+
+        />
+    <EditText
+        android:layout_toRightOf="@+id/phone_icon"
+        android:id="@+id/address"
+        android:hint="Address"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolor"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:layout_below="@+id/phone"
+
+        />
+    <EditText
+
+        android:id="@+id/city"
+        android:hint="City"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolor"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:layout_below="@+id/address"
+        android:layout_marginLeft="40dp"
+
+        />
+    <Spinner
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/state_arrays"
+        android:prompt="@string/state_prompt"
+        android:layout_below="@+id/city"
+        android:background="@color/mycolor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:scrollbarSize="40dp"
+        android:textSize="30dp"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <EditText
+
+        android:id="@+id/zip"
+        android:hint="Zip"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/mycolor"
+        android:textSize="30dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/phone"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="Submit"
+        android:layout_below="@+id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+
+
+        />
+
+
+
+</RelativeLayout>

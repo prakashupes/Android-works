@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text=" I AM TEXTVIEW"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="serif"
+
+        />
+    <Button
+        android:id="@+id/v2"
+        android:layout_below="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Change Font"
+        android:layout_marginHorizontal="30dp"
+        android:onClick="changefont"
+
+         />
+
+    <Button
+        android:id="@+id/v3"
+        android:layout_below="@id/v2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="change Color"
+        android:layout_marginHorizontal="30dp"
+        android:onClick="changecolor"
+        />
+
+
+    <Button
+        android:id="@+id/exp4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+
+        android:text="Go Exp 4_2"
+
+
+        />
+</RelativeLayout>

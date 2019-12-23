@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LAb</string>
+    <string name="state_prompt">State</string>
+    <string-array name="state_arrays">
+        <item>MP</item>
+        <item>UP</item>
+        <item>Uttarakhand</item>
+        <item>New Delhi</item>
+        <item>Maharashtra</item>
+        <item>Bihar</item>
+        <item>Punjab</item>
+        <item>Kerla</item>
+
+    </string-array>
+</resources>
